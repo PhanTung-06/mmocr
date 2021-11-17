@@ -592,6 +592,7 @@ class MMOCR:
                     annotations[i]['box'] = [
                         min_x, min_y, max_x, min_y, max_x, max_y, min_x, max_y
                     ]
+                    print(annotations[i]['box'])
                 ann_info = kie_dataset._parse_anno_info(annotations)
                 kie_result, data = model_inference(
                     kie_model,
