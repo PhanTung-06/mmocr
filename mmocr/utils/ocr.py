@@ -435,7 +435,7 @@ class MMOCR:
                                                args.single_batch_size)
                 pp_result = self.single_pp(result, model)
 
-        return pp_result
+        # return pp_result
 
     # Post processing function for end2end ocr
     def det_recog_pp(self, result):
