@@ -517,6 +517,7 @@ class MMOCR:
 
     # End2end ocr inference pipeline
     def det_recog_kie_inference(self, det_model, recog_model, kie_model=None):
+        print('hàm này nè')
         end2end_res = []
         # Find bounding boxes in the images (text detection)
         det_result = self.single_inference(det_model, self.args.arrays,
